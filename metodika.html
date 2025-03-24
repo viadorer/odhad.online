@@ -2,45 +2,9 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <!-- Meta Pixel Code -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '581364111162528');
-        fbq('track', 'PageView');
-        </script>
-        <noscript><img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=581364111162528&ev=PageView&noscript=1"
-        /></noscript>
-        <!-- End Meta Pixel Code -->
-         
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-5BJX68GM');</script>
-        <!-- End Google Tag Manager -->
-
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W42ZK43LDB"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-W42ZK43LDB');
-    </script>
-    <!-- End Google Analytics -->
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="images/favicon.png">
-    <title>Odhad nemovitosti | Odhad.Online</title>
+    <link rel="icon" type="image/png" href="Images/favicon.png">
+    <title>Metodika ocenění nemovitostí | Odhad.Online</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script>
@@ -54,34 +18,27 @@
             }
         }
     </script>
-    <script>var cemap_id = '22642/235f94312cb0beea2fe91791583a1aa735ee02fc';</script>
-    <script src="https://cemap.cz/beta2/inc/js/widget.js" async></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body class="bg-white">
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BJX68GM"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    
+<body class="bg-gray-50">
     <!-- Navigace -->
-    <nav class="bg-white shadow-sm fixed w-full z-50">
+    <nav class="bg-white/80 backdrop-blur-lg shadow-sm fixed w-full z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
-                <a href="/" class="flex-shrink-0 flex items-center gap-3">
-                    <img class="h-10 w-auto" src="images/logo.png" alt="Odhad.online logo">
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-3">
+                    <img class="h-10 w-auto" src="Images/logo.png" alt="Odhad.online logo">
                     <span class="text-primary text-xl font-bold">Odhad.Online</span>
                 </a>
                 <!-- Desktop menu -->
                 <div class="hidden md:flex md:items-center md:space-x-8">
-                    <a href="mailto:info@odhad.online" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Kontakt</a>
-                    <a href="odhad.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                        Odhad zdarma
-                    </a>
+                    <a href="index.html#jak-to-funguje" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Jak to funguje</a>
+                    <a href="index.html#vyhody" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Výhody</a>
+                    <a href="index.html#kontakt" class="text-gray-700 hover:text-primary transition-colors duration-200 font-medium">Kontakt</a>
+                    <a href="odhad.html" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-xl text-white bg-primary hover:bg-primary/90 transition-colors duration-200">Odhad zdarma</a>
                 </div>
                 <!-- Mobile menu button -->
                 <div class="md:hidden">
@@ -108,33 +65,67 @@
         </div>
     </nav>
 
-    <!-- Hero sekce -->
-    <section class="pt-32 pb-48 relative overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="images/odhad.png" alt="Background" class="w-full h-full object-cover">
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="bg-black/40 backdrop-blur-sm rounded-3xl py-12 px-6 sm:px-12 max-w-4xl mx-auto">
-                <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6">
-                    Zjistěte hodnotu vaší nemovitosti během dvou minut
-                </h1>
-                <p class="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-medium">
-                    Stačí vyplnit jednoduchý formulář a získáte okamžitý odhad ceny vaší nemovitosti.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formulář sekce -->
-    <section class="relative -mt-40 pb-20 bg-gray-50">
+    <!-- Main content -->
+    <main class="pt-32 pb-16">
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl shadow-xl p-8 relative z-20">
-                <div class="cemap-widget" data-options="id=101"></div>
+            <div class="bg-white rounded-2xl shadow-sm p-8">
+
+                <div class="prose max-w-none">
+        <h1 class="text-3xl font-bold text-gray-900 mb-8">Metodika ocenění nemovitostí na odhad.online</h1>
+    
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Princip ocenění</h2>
+        <p class="text-gray-600 mb-6">
+            Portál odhad.online poskytuje odborné ocenění nemovitostí na základě porovnávací metody, která vychází z aktuálních tržních dat a analýzy realizovaných prodejů. Cílem je přesně stanovit reálnou hodnotu nemovitosti v daném čase a lokalitě.
+        </p>
+    
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Faktory ovlivňující ocenění</h2>
+        <p class="text-gray-600 mb-4">Při výpočtu zohledňujeme následující parametry:</p>
+        <ul class="list-disc pl-6 text-gray-600 mb-6">
+            <li>Lokalita a její aktuální tržní hodnotu – cenová úroveň v daném regionu, atraktivita oblasti, dostupnost občanské vybavenosti a dopravní infrastruktura.</li>
+            <li>Velikost a dispozici nemovitosti – celková výměra, počet místností a jejich uspořádání.</li>
+            <li>Stav a vybavení – technický stav budovy, kvalita materiálů, úroveň rekonstrukce a případná modernizace.</li>
+            <li>Srovnatelné prodeje a nabídky v okolí – ceny obdobných nemovitostí, které byly nedávno prodány nebo jsou aktuálně nabízeny na trhu.</li>
+            <li>Aktuální tržní trendy – vývoj cen nemovitostí, poptávka v dané lokalitě a další ekonomické faktory ovlivňující realitní trh.</li>
+        </ul>
+        <p class="text-gray-600 mb-6">
+            Pro detailní ocenění je vždy nutná osobní prohlídka odborníkem, který na místě posoudí technický stav, polohu, vybavení a další specifické faktory, jež mohou mít vliv na konečnou hodnotu nemovitosti.
+        </p>
+    
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Metodika ocenění</h2>
+        <p class="text-gray-600 mb-4">
+            Platforma využívá porovnávací metodu, která je nejpřesnějším přístupem ke stanovení tržní hodnoty nemovitosti. Tento způsob ocenění vychází z analýzy:
+        </p>
+        <ul class="list-disc pl-6 text-gray-600 mb-6">
+            <li>Historických transakcí – reálně prodaných nemovitostí evidovaných v katastru nemovitostí.</li>
+            <li>Aktuálních nabídek – srovnání s podobnými nemovitostmi v inzerci.</li>
+            <li>Korekčních faktorů – úpravy ceny podle rozdílů mezi jednotlivými nemovitostmi, jako je poloha, stav či vybavení.</li>
+        </ul>
+    
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Význam správného ocenění</h2>
+        <p class="text-gray-600 mb-6">
+            Správně stanovená cena je klíčová pro efektivní prodej. Nesprávná cenová strategie může vést k prodloužení doby inzerce a ke snížení prodejní ceny.
+        </p>
+        <ul class="list-disc pl-6 text-gray-600 mb-6">
+            <li>Příliš vysoká cena – odrazuje zájemce, snižuje počet prohlídek a zvyšuje riziko dlouhodobé neprodejnosti.</li>
+            <li>Příliš nízká cena – vede k rychlému prodeji pod reálnou tržní hodnotou a ke zbytečné finanční ztrátě.</li>
+        </ul>
+        <p class="text-gray-600 mb-6">
+            Dlouhá doba na trhu snižuje atraktivitu nemovitosti, vytváří dojem „ležáku" a oslabuje vyjednávací pozici prodávajícího. Kupující v takovém případě často očekávají slevu, což může mít negativní dopad na konečnou cenu.
+        </p>
+    
+        <h2 class="text-2xl font-semibold text-gray-900 mt-8 mb-4">Odhad.online jako efektivní nástroj pro ocenění nemovitostí</h2>
+        <p class="text-gray-600 mb-6">
+            Portál odhad.online poskytuje rychlý a odborný odhad tržní hodnoty na základě reálných dat a analytických modelů. Nabízí objektivní a transparentní přístup k ocenění bez subjektivních zkreslení.
+        </p>
+        <p class="text-gray-600 mb-6">
+            Získejte kvalifikované ocenění své nemovitosti a přesnou představu o její hodnotě na současném trhu.
+        </p>
+                    </div>
             </div>
         </div>
-    </section>
+    </main>
 
-<!-- Footer -->
+    <!-- Footer -->
 <footer class="bg-gray-900 text-white pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Hlavní grid -->
@@ -142,7 +133,7 @@
             <!-- Logo a popis -->
             <div>
                 <div class="flex items-center gap-3 mb-4">
-                    <img src="images/logo.png" alt="Odhad.online" class="h-8">
+                    <img src="Images/logo.png" alt="Odhad.online" class="h-8">
                     <span class="text-primary text-xl font-semibold">Odhad.online</span>
                 </div>
                 <p class="text-gray-400 text-sm mb-4">
@@ -187,16 +178,16 @@
                 <h4 class="text-lg font-semibold mb-4">Dokumenty</h4>
                 <ul class="space-y-3 text-gray-400">
                     <li>
-                        <a href="#" class="hover:text-white transition-colors">Obchodní podmínky</a>
+                        <a href="OP.html" class="hover:text-white transition-colors">Obchodní podmínky</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-white transition-colors">Ochrana osobních údajů</a>
+                        <a href="oou.html" class="hover:text-white transition-colors">Ochrana osobních údajů</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-white transition-colors">Cookies</a>
+                        <a href="cookies.html" class="hover:text-white transition-colors">Zásady cookies</a>
                     </li>
                     <li>
-                        <a href="#" class="hover:text-white transition-colors">Metodika ocenění</a>
+                        <a href="metodika.html" class="hover:text-white transition-colors">Metodika ocenění</a>
                     </li>
                 </ul>
             </div>
@@ -259,5 +250,7 @@
             });
         });
     </script>
+    <!-- Cookies JS -->
+    <script src="js/cookies.js"></script>
 </body>
 </html>
