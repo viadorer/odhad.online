@@ -1,0 +1,152 @@
+<div class="prose prose-lg max-w-none">
+    <!-- INSTRUKCE PRO POUŽITÍ ŠABLONY:
+    
+    1. Zkopírujte tento soubor a přejmenujte ho podle ID článku z posts.json
+    2. Nahraďte všechny {{PLACEHOLDER}} texty skutečným obsahem
+    3. Používejte HTML tagy pro formátování (h2, h3, p, ul, li, strong, em)
+    4. Pro zvýraznění důležitých informací použijte připravené bloky níže
+    5. Nezapomeňte přidat odpovídající záznam do posts.json
+    
+    -->
+
+    <!-- Úvodní odstavec s většším písmem -->
+    <p class="lead text-xl text-gray-700 mb-8">
+        {{ÚVODNÍ_ODSTAVEC}} - Zde napište stručné shrnutí článku, které zaujme čtenáře.
+    </p>
+
+    <!-- Hlavní obsah článku -->
+    <h2>{{NÁZEV_SEKCE_1}}</h2>
+    <p>
+        {{OBSAH_SEKCE_1}} - Zde napište obsah první sekce...
+    </p>
+
+    <!-- Seznam s odrážkami -->
+    <ul>
+        <li>{{POLOŽKA_1}}</li>
+        <li>{{POLOŽKA_2}}</li>
+        <li>{{POLOŽKA_3}}</li>
+    </ul>
+
+    <!-- Zvýrazněný tip (modrý) -->
+    <div class="bg-blue-50 border-l-4 border-blue-400 p-6 my-8">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-blue-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="ml-3">
+                <p class="text-sm text-blue-700">
+                    <strong>Tip:</strong> {{TEXT_TIPU}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Další sekce -->
+    <h2>{{NÁZEV_SEKCE_2}}</h2>
+    <p>
+        {{OBSAH_SEKCE_2}}
+    </p>
+
+    <!-- Podsekce -->
+    <h3>{{NÁZEV_PODSEKCE}}</h3>
+    <p>
+        {{OBSAH_PODSEKCE}}
+    </p>
+
+    <!-- Zvýrazněné doporučení (zelené) -->
+    <div class="bg-green-50 border-l-4 border-green-400 p-6 my-8">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-green-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="ml-3">
+                <p class="text-sm text-green-700">
+                    <strong>Doporučení:</strong> {{TEXT_DOPORUČENÍ}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Varování (červené) -->
+    <div class="bg-red-50 border-l-4 border-red-400 p-6 my-8">
+        <div class="flex">
+            <div class="flex-shrink-0">
+                <svg class="h-5 w-5 text-red-400" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                </svg>
+            </div>
+            <div class="ml-3">
+                <p class="text-sm text-red-700">
+                    <strong>Pozor:</strong> {{TEXT_VAROVÁNÍ}}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA blok (volitelný) -->
+    <div class="bg-gray-50 rounded-lg p-8 my-12 text-center">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">{{NÁZEV_CTA}}</h3>
+        <p class="text-gray-600 mb-6">
+            {{TEXT_CTA}}
+        </p>
+        <a href="{{ODKAZ_CTA}}" class="inline-block bg-blue-600 text-white font-semibold px-8 py-3 rounded-full hover:bg-blue-700 transition-colors">
+            {{TEXT_TLAČÍTKA}}
+        </a>
+    </div>
+
+    <!-- Závěr -->
+    <h2>Závěr</h2>
+    <p>
+        {{ZÁVĚREČNÝ_ODSTAVEC}}
+    </p>
+    <p>
+        Pokud máte jakékoliv otázky nebo potřebujete pomoct, 
+        <a href="/index.html#kontakt" class="text-blue-600 hover:underline">kontaktujte nás</a>. 
+        Naši experti vám rádi poradí.
+    </p>
+</div>
+
+<!-- 
+NÁVOD PRO PŘIDÁNÍ NOVÉHO ČLÁNKU:
+
+1. VYTVOŘTE NOVÝ HTML SOUBOR:
+   - Zkopírujte tento soubor
+   - Přejmenujte na: nazev-clanku.html (podle ID v posts.json)
+   
+2. UPRAVTE OBSAH:
+   - Nahraďte všechny {{PLACEHOLDER}} texty
+   - Upravte strukturu podle potřeby
+   - Přidejte obrázky, odkazy a další obsah
+   
+3. PŘIDEJTE DO POSTS.JSON:
+   - Otevřete soubor blog/posts.json
+   - Přidejte nový záznam do pole "posts":
+   
+   {
+     "id": "nazev-clanku",
+     "title": "Název článku",
+     "excerpt": "Krátký popis článku...",
+     "category": "tips|legal|market",
+     "categoryName": "Tipy & Triky|Právní rady|Trh & Finance",
+     "image": "/images/blog/nazev-obrazku.jpg",
+     "imageAlt": "Popis obrázku",
+     "date": "2024-MM-DD",
+     "dateFormatted": "DD. měsíce YYYY",
+     "readTime": 8,
+     "keywords": "klíčová, slova, oddělená, čárkami"
+   }
+
+4. PŘIDEJTE OBRÁZEK:
+   - Umístěte hlavní obrázek článku do složky /images/blog/
+   - Doporučená velikost: 1200x630px
+   - Formát: JPG nebo PNG
+   
+5. OTESTUJTE:
+   - Otevřete blog.html a zkontrolujte, že se článek zobrazuje
+   - Klikněte na článek a ověřte, že se načte správně
+   - Zkontrolujte odkazy a formátování
+-->

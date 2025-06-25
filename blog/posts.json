@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": "proc-je-premrstena-cena-vasi-nemovitosti-cesta-do-pekel",
+      "title": "Proč je přemrštěná cena vaší nemovitosti cesta do pekel (a jak to ovlivní vaši peněženku)",
+      "excerpt": "Zjistěte, proč nadhodnocená cena nemovitosti škodí vašemu prodeji víc, než si myslíte. Praktické tipy, jak se vyhnout finančním ztrátám a prodat rychle za správnou cenu.",
+      "category": "market",
+      "categoryName": "Trh & Finance",
+      "image": "/images/blog/clanek16.png",
+      "imageAlt": "Přemrštěná cena nemovitosti a finanční ztráty",
+      "date": "2025-01-15",
+      "dateFormatted": "15. ledna 2025",
+      "readTime": 8,
+      "keywords": "přemrštěná cena, nadhodnocení nemovitosti, prodej nemovitosti, tržní cena, cenová strategie"
+    },
+    {
+      "id": "klic-k-uspechu-prodeje-presny-odhad-trzni-ceny-nemovitosti",
+      "title": "Klíč k úspěchu prodeje: Přesný odhad tržní ceny nemovitosti",
+      "excerpt": "Zjistěte, proč je správné stanovení tržní ceny alfou a omegou úspěšného prodeje nemovitosti. Praktické tipy pro realistické nacenění.",
+      "category": "market",
+      "categoryName": "Trh & Finance",
+      "image": "/images/blog/clanek15.png",
+      "imageAlt": "Odhad ceny nemovitosti a prodej",
+      "date": "2024-12-26",
+      "dateFormatted": "26. prosince 2024",
+      "readTime": 10,
+      "keywords": "odhad tržní ceny, prodej nemovitosti, nacenění, tržní hodnota, rychlý prodej"
+    },
+    {
+      "id": "spravne-oceneni-nemovitosti",
+      "title": "Správné ocenění nemovitosti: Kompletní průvodce",
+      "excerpt": "Zjistěte, jak správně ocenit nemovitost a na co si dát pozor. Praktický návod s tipy od odborníků pro přesné stanovení tržní hodnoty.",
+      "category": "market",
+      "categoryName": "Trh & Finance",
+      "image": "/images/blog/clanek17.png",
+      "imageAlt": "Ocenění nemovitosti s kalkulačkou a dokumenty",
+      "date": "2024-12-25",
+      "dateFormatted": "25. prosince 2024",
+      "readTime": 12,
+      "keywords": "ocenění nemovitosti, tržní hodnota, odhad ceny, oceňování, znalecký posudek"
+    }
+  ]
+}
