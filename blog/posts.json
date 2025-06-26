@@ -1,6 +1,45 @@
 {
   "posts": [
     {
+      "id": "nez-zacnete-rekonstruovat-proc-nikdy-nedelat-upravy-pred-prodejem-bez-konzultace",
+      "title": "Než začnete rekonstruovat: Proč nikdy nedělat úpravy před prodejem bez konzultace s odborníkem",
+      "excerpt": "Zjistěte, proč může rekonstrukce před prodejem přinést víc škody než užitku. Praktické tipy, jak se vyhnout zbytečným investicím a ušetřit statisíce korun.",
+      "category": "tips",
+      "categoryName": "Tipy & Triky",
+      "image": "/images/blog/clanek18.png",
+      "imageAlt": "Konzultace před rekonstrukcí nemovitosti",
+      "date": "2025-06-15",
+      "dateFormatted": "15. června 2025",
+      "readTime": 7,
+      "keywords": "rekonstrukce před prodejem, konzultace odborník, návratnost investice, zbytečné úpravy, realitní trh"
+    },
+    {
+      "id": "nejlepsi-pomer-cena-vykon-jak-drobne-upravy-zvysuji-hodnotu-nemovitosti",
+      "title": "Nejlepší poměr cena/výkon: Jak drobné úpravy výrazně zvyšují hodnotu nemovitosti",
+      "excerpt": "Zjistěte, jaké nenápadné úpravy mají největší dopad na hodnotu nemovitosti. Praktický průvodce efektivními investicemi, které se skutečně vrátí při prodeji nebo pronájmu.",
+      "category": "tips",
+      "categoryName": "Tipy & Triky",
+      "image": "/images/blog/clanek17.png",
+      "imageAlt": "Drobné úpravy zvyšující hodnotu nemovitosti",
+      "date": "2025-03-15",
+      "dateFormatted": "15. března 2025",
+      "readTime": 6,
+      "keywords": "úpravy nemovitosti, renovace, poměr cena výkon, zvýšení hodnoty, investice do nemovitosti, výmalba, úklid"
+    },
+    {
+      "id": "proc-stav-nemovitosti-hraje-klicovou-roli-v-jeji-cene",
+      "title": "Proč stav nemovitosti hraje klíčovou roli v její ceně (a jak na to chytře myslet před prodejem)",
+      "excerpt": "Zjistěte, jak technický stav nemovitosti ovlivňuje její cenu a jaké jednoduché úpravy mohou výrazně zvýšit hodnotu vaší nemovitosti před prodejem.",
+      "category": "tips",
+      "categoryName": "Tipy & Triky",
+      "image": "/images/blog/clanek14.png",
+      "imageAlt": "Stav nemovitosti a jeho vliv na cenu",
+      "date": "2025-02-15",
+      "dateFormatted": "15. února 2025",
+      "readTime": 7,
+      "keywords": "stav nemovitosti, technický stav, opravy před prodejem, zvýšení hodnoty nemovitosti, rekonstrukce"
+    },
+    {
       "id": "proc-je-premrstena-cena-vasi-nemovitosti-cesta-do-pekel",
       "title": "Proč je přemrštěná cena vaší nemovitosti cesta do pekel (a jak to ovlivní vaši peněženku)",
       "excerpt": "Zjistěte, proč nadhodnocená cena nemovitosti škodí vašemu prodeji víc, než si myslíte. Praktické tipy, jak se vyhnout finančním ztrátám a prodat rychle za správnou cenu.",
