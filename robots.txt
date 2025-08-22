@@ -1,12 +1,9 @@
 User-agent: *
 Allow: /
-Disallow: /images/
-Disallow: /css/
-Disallow: /js/
 
 # Povolení indexování hlavních stránek
 Allow: /index.html
 Allow: /odhad.html
 
 # Odkaz na sitemap
-Sitemap: https://odhad.online/sitemap.xml
+Sitemap: https://www.odhad.online/sitemap.xml
