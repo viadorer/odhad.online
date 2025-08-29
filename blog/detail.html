@@ -172,8 +172,32 @@
     <!-- Footer placeholder -->
     <div id="footer-placeholder"></div>
 
-    <!-- Component loader script -->
+    <!-- Tailwind config (must be declared before Tailwind CDN) -->
+    <script>
+        window.tailwind = window.tailwind || {};
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0D28F2'
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Accessibility overrides for CTA banners -->
+    <style>
+        /* Improve text contrast inside brand CTA blocks */
+        .bg-primary p { color: rgba(255, 255, 255, 0.95); }
+        .bg-primary .text-blue-50,
+        .bg-primary .text-blue-100,
+        .bg-primary .text-blue-200 { color: rgba(255, 255, 255, 0.92) !important; }
+        .bg-primary .text-white { color: #ffffff !important; }
+        /* Button focus styles for better accessibility */
+        .bg-primary a:focus { outline: 2px solid #ffffff; outline-offset: 2px; }
+    </style>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="../js/components.js"></script>
     
@@ -225,7 +249,27 @@
                         try {
                             const contentResponse = await fetch(`/blog/posts/${postId}.html`);
                             if (contentResponse.ok) {
-                                this.postContent = await contentResponse.text();
+                                const raw = await contentResponse.text();
+                                // Try to parse and extract only the main article content when a full HTML document is provided
+                                try {
+                                    const parser = new DOMParser();
+                                    const doc = parser.parseFromString(raw, 'text/html');
+
+                                    // Prefer explicit article container
+                                    const prose = doc.querySelector('.prose.prose-lg.max-w-none') || doc.querySelector('.prose');
+                                    if (prose) {
+                                        this.postContent = prose.outerHTML;
+                                    } else if (doc.body && doc.body.innerHTML.trim()) {
+                                        // Fallback to body content if present
+                                        this.postContent = doc.body.innerHTML;
+                                    } else {
+                                        // As-is fallback
+                                        this.postContent = raw;
+                                    }
+                                } catch (parseErr) {
+                                    // If parsing fails, render as-is
+                                    this.postContent = raw;
+                                }
                             } else {
                                 this.postContent = '<p>Obsah článku se nepodařilo načíst.</p>';
                             }
