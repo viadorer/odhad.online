@@ -1,0 +1,66 @@
+# AI Training Data Policy for Odhad.online
+# Version: 1.0
+# Last Updated: 2026-02-09
+
+# Contact Information
+Contact-Email: info@odhad.online
+Contact-Phone: +420774240944
+Contact-URL: https://www.odhad.online
+
+# Permissions
+## General AI Training
+AI-Training: allowed
+AI-Crawling: allowed
+
+## Specific Use Cases
+Use-Case: conversational-ai
+Permission: allowed
+Description: Our content may be used to help AI assistants answer questions about real estate valuation in Czech Republic
+
+Use-Case: search-enhancement
+Permission: allowed
+Description: Our content may be indexed for AI-powered search engines
+
+Use-Case: summarization
+Permission: allowed
+Description: Our content may be summarized by AI tools
+
+## Content Guidelines
+Attribution: preferred
+Attribution-URL: https://www.odhad.online
+Attribution-Name: Odhad.online
+
+## Restrictions
+Commercial-Use: allowed-with-attribution
+Modification: allowed
+Redistribution: allowed-with-attribution
+
+## Excluded Content
+# Legal pages should not be used for training
+Disallow-Path: /cookies.html
+Disallow-Path: /oou.html
+Disallow-Path: /OP.html
+
+## Preferred Content
+# These pages contain our most valuable content for AI training
+Prefer-Path: /
+Prefer-Path: /blog.html
+Prefer-Path: /blog/posts/
+Prefer-Path: /metodika.html
+Prefer-Path: /chyby-pri-stanoveni-ceny.html
+
+## Data Categories
+Category: real-estate
+Category: property-valuation
+Category: czech-market
+Category: financial-services
+
+## Language
+Primary-Language: cs
+Secondary-Language: en
+
+## Update Frequency
+Update-Frequency: weekly
+
+## Notes
+Description: Odhad.online provides free online real estate valuation services in Czech Republic. Our content includes methodology, market insights, and practical tips for property owners and buyers.

@@ -3,49 +3,49 @@
   <!-- Core pages -->
   <url>
     <loc>https://www.odhad.online/</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/odhad.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/metodika.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/chyby-pri-stanoveni-ceny.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/cookies.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/oou.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/OP.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -53,50 +53,56 @@
   <!-- Blog posts -->
   <url>
     <loc>https://www.odhad.online/blog/posts/tichy-zabijak-vaseho-prodeje-spatne-nastavena-cena.html</loc>
-    <lastmod>2025-08-22</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog/posts/nez-zacnete-rekonstruovat-proc-nikdy-nedelat-upravy-pred-prodejem-bez-konzultace.html</loc>
-    <lastmod>2025-06-15</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog/posts/nejlepsi-pomer-cena-vykon-jak-drobne-upravy-zvysuji-hodnotu-nemovitosti.html</loc>
-    <lastmod>2025-03-15</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog/posts/proc-stav-nemovitosti-hraje-klicovou-roli-v-jeji-cene.html</loc>
-    <lastmod>2025-02-15</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog/posts/proc-je-premrstena-cena-vasi-nemovitosti-cesta-do-pekel.html</loc>
-    <lastmod>2025-01-15</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog/posts/klic-k-uspechu-prodeje-presny-odhad-trzni-ceny-nemovitosti.html</loc>
-    <lastmod>2024-12-26</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog/posts/spravne-oceneni-nemovitosti.html</loc>
-    <lastmod>2024-12-25</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.odhad.online/blog/posts/tipy-pro-uspesny-pronajem.html</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/posts/fotografie-a-jejich-vliv-na-cenu-proc-se-kupujici-rozhoduje-jeste-pred-prohlidkou.html</loc>
+    <lastmod>2026-02-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

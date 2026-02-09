@@ -5,5 +5,28 @@ Allow: /
 Allow: /index.html
 Allow: /odhad.html
 
+# AI Crawlers - povoleno pro lepší viditelnost v AI asistentů
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
 # Odkaz na sitemap
 Sitemap: https://www.odhad.online/sitemap.xml
+Sitemap: https://www.odhad.online/ai.txt
