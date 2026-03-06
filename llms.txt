@@ -1,0 +1,196 @@
+# odhad.online
+
+> Online odhad tržní ceny nemovitosti v ČR na základě dat z katastru nemovitostí a realizovaných prodejů.
+
+## Pro koho
+- Bolesti a potřeby: PRODÁVAJÍCÍ:
+- Neví, za kolik nemovitost nabídnout
+- Obava z podhodnocení nebo předražení
+- Nejistota ohledně doby prodeje
+- Potřeba: Realistický odhad + strategie prodeje
+
+KUPUJÍCÍ:
+- Nejistota, jest...
+- Cílová skupina: Primární cílové skupiny:
+
+1. PRODÁVAJÍCÍ (30-40 % leadů):
+- Vlastníci nemovitostí zvažující prodej
+- Potřebují znát tržní cenu pro rozhodnutí
+- Věk: 35-65 let, vlastní byt/dům
+- Intent: Zjistit cenu →...
+- Tone of voice pro různé persony: PRVOKUPUJÍCÍ:
+- Edukativní, trpělivý, povzbuzující
+- Vysvětluj jednoduše, žádná hantýrka
+- "Spousta lidí začíná stejně jako vy. Pojďme si to projít krok po kroku."
+
+INVESTOR:
+- Expertní, datově orient...
+
+## Případové studie
+- Příběh: Investor a výnosnost nájmu: Situace: Investor zvažoval koupi 1+kk v Ostravě za 1,8 mil. Kč. Hugo odhadl tržní hodnotu na 1,6-1,9 mil. Kč a orientační nájem na 9-11 tis. Kč/měsíc. Hrubá výnosnost: 6-7 % ročně. Investor koupil za ...
+- Příběh: Prodej bytu v Praze za správnou cenu: Situace: Majitel 3+1 na Praze 6 chtěl prodat. Realitka navrhla 8,5 mil. Kč. Odhad.online ukázal rozmezí 7,2-7,8 mil. Kč na základě srovnatelných prodejů v okolí. Majitel se rozhodl pro kompromis 7,9 m...
+- Příběh: Dědictví a spravedlivé rozdělení: Situace: Tři sourozenci zdědili rodinný dům v Olomouci. Potřebovali orientační hodnotu pro spravedlivé rozdělení. Jeden chtěl dům, ostatní podíl v penězích. Hugo odhadl hodnotu na 4,8-5,2 mil. Kč. Sou...
+- Příběh: Kupující ušetřil 400 tis. Kč: Situace: Kupující našel byt 2+kk v Brně za 4,2 mil. Kč. Před koupí si nechal udělat odhad na odhad.online. Hugo ukázal rozmezí 3,6-3,9 mil. Kč. Kupující vyjednal slevu na 3,8 mil. Kč s odkazem na srov...
+
+## Data a statistiky
+- Hypoteční sazby a jejich vliv: Aktuální hypoteční sazby (únor 2026): 4,5-5,5 % p.a.
+Vliv na ceny nemovitostí: Pokles sazby o 1 p.b. = nárůst kupní síly o cca 10 %. Při sazení 5 % si na splátku 15 000 Kč/měsíc půjčíte 2,8 mil. Kč. P...
+- Průměrné nájmy v ČR 2026: Orientační průměrné nájmy bytů 2+kk (únor 2026):
+- Praha: 22-30 tis. Kč/měsíc
+- Brno: 16-22 tis. Kč/měsíc
+- Plzeň: 13-17 tis. Kč/měsíc
+- Ostrava: 10-14 tis. Kč/měsíc
+- Olomouc: 12-16 tis. Kč/měsíc
+Náj...
+- Průměrné ceny bytů v ČR 2026: Orientační průměrné ceny bytů (únor 2026):
+- Praha: 120-140 tis. Kč/m²
+- Brno: 80-100 tis. Kč/m²
+- Plzeň: 60-75 tis. Kč/m²
+- Ostrava: 35-50 tis. Kč/m²
+- Olomouc: 55-70 tis. Kč/m²
+- České Budějovice: 5...
+- Faktory ovlivňující cenu nemovitosti: Hlavní faktory a jejich vliv na cenu:
+1. Lokalita (město, čtvrť, ulice) - až 40 % vlivu
+2. Velikost (užitná plocha) - až 25 % vlivu
+3. Stav (novostavba, po rekonstrukci, původní) - až 15 % vlivu
+4. Ty...
+
+## Časté otázky
+- Jak dlouho trvá odhad?: Konverzace s Hugem trvá 1-3 minuty. Hugo se zeptá na základní parametry nemovitosti (typ, adresa, plocha, stav, dispozice) a během chvíle poskytne orientační odhad s vysvětlením. Žádné čekání, žádné t...
+- Jak přesný je odhad?: Orientační odhad na odhad.online je založen na reálných transakcích v okolí. Přesnost závisí na dostupnosti dat v dané lokalitě. V Praze a krajských městech je přesnost vysoká (±5-10 %). V menších obc...
+- Můžu odhad použít pro hypotéku?: Orientační odhad z odhad.online není znaleckým posudkem a nelze ho použít pro banku. Pro hypotéku potřebujete znalecký posudek od certifikovaného soudního znalce (cena 3 000-8 000 Kč). Náš odhad je al...
+- Je odhad zdarma?: Ano, orientační odhad na odhad.online je zcela zdarma. Žádné poplatky, žádné skryté náklady, žádná registrace. Stačí napsat Hugovi a popsat nemovitost. Pokud budete potřebovat znalecký posudek pro ban...
+- Jaká data Hugo používá?: Hugo pracuje s daty z reálných prodejů a pronájmů nemovitostí v ČR. Zdroje zahrnují katastr nemovitostí, statistiky ČSÚ, data z realitních portálů a historické transakce. Algoritmus porovnává parametr...
+- Budete mě kontaktovat po odhadu?: NE. Odhad.online je plně automatizovaná služba. Hugo je AI chatbot, ne obchodník. Po odhadu vás nikdo nekontaktuje, nevolá, neposílá nabídky. Pokud budete chtít další služby, můžete nás kontaktovat vy...
+
+## Obecné informace
+- Tipy a triky: Formát: Rychlé praktické rady
+
+Struktura:
+1. Hook: "3 věci které zvýší cenu vašeho bytu"
+2. Tip 1: Konkrétní rada + vysvětlení
+3. Tip 2: Konkrétní rada + vysvětlení
+4. Tip 3: Konkrétní rada + vysvětle...
+- Edukační posty - Jak odhadnout cenu: Formát: Praktický návod s kroky
+
+Struktura:
+1. Hook: Otázka nebo problém ("Nevíte, za kolik nabídnout byt?")
+2. Kontext: Proč je to důležité
+3. Kroky: 3-5 konkrétních kroků jak postupovat
+4. Příklad: ...
+- Case study - Reálný příběh klienta: Formát: Storytelling s čísly
+
+Struktura:
+1. Situace: "Paní Jana z Plzně chtěla prodat byt..."
+2. Problém: Co řešila, jaké měla obavy
+3. Řešení: Jak jí Odhad.online pomohl
+4. Výsledek: Konkrétní čísla,...
+- Statistiky a trendy trhu: Formát: Data-driven post s grafy/čísly
+
+Struktura:
+1. Hook: Překvapivé číslo nebo trend
+2. Data: 3-5 konkrétních statistik
+3. Analýza: Co to znamená pro čtenáře
+4. Predikce: Kam se trh pravděpodobně v...
+- Mýty a fakta: Formát: Debunking + edukace
+
+Struktura:
+1. Mýtus: "Mnoho lidí si myslí, že..."
+2. Realita: "Ve skutečnosti..."
+3. Vysvětlení: Proč je to jinak
+4. Důkaz: Data nebo příklad
+5. Doporučení: Co dělat správ...
+
+## Právní informace
+- Právní status orientačního odhadu: Orientační odhad ceny nemovitosti na Odhad.online je informativní služba založená na statistickém zpracování veřejně dostupných dat o transakcích s nemovitostmi.
+
+NENÍ:
+- Znaleckým posudkem ve smyslu ...
+- GDPR a ochrana osobních údajů: Odhad.online zpracovává osobní údaje v souladu s GDPR:
+
+JAKÉ ÚDAJE SBÍRÁME:
+- Jméno, email, telefon (volitelný)
+- Parametry nemovitosti (adresa, plocha, stav)
+- Historie konverzace s AI Hugo
+
+ÚČEL ZPR...
+
+## Trh
+- Konkurence: Hlavní konkurenti v oblasti odhadu nemovitostí:
+
+1. REALITNÍ KANCELÁŘE:
+- Nabízí odhad zdarma jako lead magnet
+- Často subjektivní (chtějí získat zakázku)
+- Osobní schůzka nutná
+- Výhoda Odhad.online:...
+- Trh nemovitostí v ČR 2026: Aktuální situace na trhu nemovitostí v ČR:
+
+CENY:
+- Průměrná cena bytu v Praze: 120-140 tis. Kč/m2
+- Průměrná cena bytu v Brně: 80-100 tis. Kč/m2
+- Průměrná cena bytu v Plzni: 60-75 tis. Kč/m2
+- Rodin...
+
+## Jak to funguje
+- Kdy potřebujete znalecký posudek: Orientační odhad z odhad.online stačí pro:
+- Rozhodování o prodeji/koupi
+- Vyjednávání o ceně
+- Orientační srovnání nemovitostí
+- Rodinné dohody (dědictví, dar)
+
+Znalecký posudek potřebujete pro:
+- Hy...
+- Jak funguje odhad s Hugem: Proces odhadu na odhad.online:
+1. Otevřete chat na odhad.online
+2. Hugo se představí a zeptá se, co potřebujete (odhad prodejní ceny nebo nájmu)
+3. Hugo se zeptá na parametry: typ nemovitosti, adresa,...
+- Co dělat po obdržení odhadu: Máte odhad z odhad.online. Co dál?
+
+PRODÁVAJÍCÍ:
+1. Porovnejte odhad s aktuálními inzeráty v okolí
+2. Rozhodněte o prodejní ceně (odhad + 5-10 % pro vyjednávání)
+3. Připravte nemovitost k prodeji (úkl...
+
+## Služby
+- Jak funguje odhad: Odhad.online používá data z katastru nemovitostí a reálných transakcí. Proces:
+1. Klient zadá parametry nemovitosti (typ, adresa, plocha, stav, dispozice)
+2. AI Hugo ověří adresu přes Mapy.cz
+3. Algor...
+- Lead generation flow: Odhad.online má 3-fázový lead generation proces:
+
+FÁZE 1 - SBĚR DAT (bez bariér):
+- Klient zadá parametry nemovitosti
+- Hugo ověří adresu, doptá se na chybějící údaje
+- Žádný požadavek na kontakt v té...
+- Odhad prodejní ceny vs nájmu: Odhad.online umí odhadnout:
+1. Prodejní cenu (kind=sale) - kolik by nemovitost přinesla při prodeji na volném trhu
+2. Výši měsíčního nájmu (kind=lease) - kolik lze realisticky inkasovat za pronájem
+
+P...
+- Co ovlivňuje cenu nemovitosti: Hlavní faktory ovlivňující cenu:
+1. Lokalita (město, čtvrť, občanská vybavenost, doprava, prestiž lokality)
+2. Velikost (užitná plocha u bytů/domů, plocha pozemku)
+3. Stav (novostavba, po rekonstrukci...
+- Rozdíl mezi odhadem a znaleckým posudkem: Orientační odhad (Odhad.online):
+- Rychlý (2-3 minuty), zdarma, online
+- Založený na statistickém srovnání s okolními transakcemi
+- Vhodný pro první orientaci, rozhodování o prodeji/koupi, plánování
+-...
+- Co je Odhad.online: Odhad.online je AI odhadce nemovitostí jménem Hugo. Poskytuje orientační odhad tržní ceny nebo výše nájmu nemovitosti zdarma a nezávazně. Odhad je založen na datech z reálných prodejů a pronájmů v oko...
+
+## Klíčové výhody
+- Rozdíl oproti konkurenci: Realitní kanceláře: Odhad zdarma jako lead magnet, ale subjektivní a vyžaduje schůzku. Mají zájem na co nejvyšší ceně (vyšší provize).
+Znalci a odhadci: Placené (3-8 tis. Kč), právně závazné, trvá dny...
+- Proč Odhad.online: Hlavní výhody oproti konkurenci:
+1. ZDARMA: Orientační odhad bez poplatků a závazků
+2. AI CHATBOT: Konverzační přístup - Hugo se zeptá na detaily a zpřesní odhad
+3. RYCHLOST: Odhad do 2 minut, ne dní
+...
+
+## FAQ
+- Jak dlouho trvá odhad? Konverzace s Hugem trvá 1-3 minuty. Hugo se zeptá na základní parametry nemovitosti (typ, adresa, plocha, stav, dispozice) a během chvíle poskytne orientační odhad s vysvětlením. Žádné čekání, žádné telefonáty, žádné schůzky. Dostupný 24/7.
+- Jak přesný je odhad? Orientační odhad na odhad.online je založen na reálných transakcích v okolí. Přesnost závisí na dostupnosti dat v dané lokalitě. V Praze a krajských městech je přesnost vysoká (±5-10 %). V menších obcích může být rozmezí širší (±10-20 %). Hugo vždy uvede rozmezí min-max a vysvětlí faktory, které cen
+- Můžu odhad použít pro hypotéku? Orientační odhad z odhad.online není znaleckým posudkem a nelze ho použít pro banku. Pro hypotéku potřebujete znalecký posudek od certifikovaného soudního znalce (cena 3 000-8 000 Kč). Náš odhad je ale ideální první krok - zjistíte orientační hodnotu a můžete se lépe rozhodnout, zda má smysl investo
+- Je odhad zdarma? Ano, orientační odhad na odhad.online je zcela zdarma. Žádné poplatky, žádné skryté náklady, žádná registrace. Stačí napsat Hugovi a popsat nemovitost. Pokud budete potřebovat znalecký posudek pro banku nebo soud, ten stojí 3 000-8 000 Kč a zpracovává ho certifikovaný soudní znalec.
+- Jaká data Hugo používá? Hugo pracuje s daty z reálných prodejů a pronájmů nemovitostí v ČR. Zdroje zahrnují katastr nemovitostí, statistiky ČSÚ, data z realitních portálů a historické transakce. Algoritmus porovnává parametry vaší nemovitosti (typ, plocha, stav, lokalita, dispozice) se srovnatelnými transakcemi v okolí a v
+- Budete mě kontaktovat po odhadu? NE. Odhad.online je plně automatizovaná služba. Hugo je AI chatbot, ne obchodník. Po odhadu vás nikdo nekontaktuje, nevolá, neposílá nabídky. Pokud budete chtít další služby, můžete nás kontaktovat vy. Ale my vás nekontaktujeme.
