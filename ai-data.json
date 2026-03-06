@@ -1,0 +1,61 @@
+{
+  "@context": "https://schema.org",
+  "generatedAt": "2026-03-06T20:32:12.170Z",
+  "generatedBy": "Hugo Orchestrator AIO Engine",
+  "projectType": "html",
+  "schemas": {
+    "organization": {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "odhad.online",
+      "description": "Online odhad tržní ceny nemovitosti v ČR na základě dat z katastru nemovitostí a realizovaných prodejů.",
+      "keywords": "odhad nemovitosti, cena bytu, tržní cena, katastr nemovitostí, realitní data, Česká republika, online odhad, cena domu"
+    },
+    "faq": {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Co je Odhad.online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Odhad.online je služba, která poskytuje profesionální ocenění nemovitostí zdarma online. Umožňuje uživatelům získat představu o ceně jejich nemovitosti."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jaké typy nemovitostí lze ocenit na Odhad.online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Odhad.online umožňuje ocenit byty, domy a pozemky."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Je online odhad nemovitosti na Odhad.online zdarma?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ano, online odhad nemovitosti na Odhad.online je zcela zdarma a nemá žádné skryté poplatky."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jaké kontaktní údaje má Odhad.online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Odhad.online lze kontaktovat emailem na info@odhad.online nebo telefonicky na čísle +420774240944. Sídlo společnosti je na Václavském náměstí 1, Praha."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Jaké je hodnocení Odhad.online?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Odhad.online má hodnocení 4.8 z 5 hvězdiček na základě 120 hodnocení."
+          }
+        }
+      ]
+    }
+  }
+}
