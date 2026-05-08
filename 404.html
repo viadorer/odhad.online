@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stránka nenalezena | Odhad.online</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0000FF',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <div id="header-placeholder"></div>
+
+    <main id="main-content" class="flex-1 flex items-center justify-center px-4 pt-20">
+        <div class="text-center max-w-lg">
+            <p class="text-6xl font-bold text-primary mb-4">404</p>
+            <h1 class="text-2xl sm:text-3xl font-bold text-gray-900 mb-4">Tato stránka neexistuje</h1>
+            <p class="text-gray-600 mb-8">Omlouváme se, ale stránka, kterou hledáte, nebyla nalezena. Možná byla přesunuta nebo odstraněna.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="/" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-white bg-primary hover:bg-primary/90 rounded-full transition-all duration-200">
+                    Zpět na hlavní stránku
+                </a>
+                <a href="/odhad.html" class="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-primary border-2 border-primary hover:bg-primary/5 rounded-full transition-all duration-200">
+                    Odhad zdarma
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <script src="/js/components.js"></script>
+</body>
+</html>

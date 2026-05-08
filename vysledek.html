@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="cs">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Výsledek odhadu | Odhad.Online</title>
+    <meta name="description" content="AI analýza odhadu nemovitosti — kontext, spolehlivost, doporučení pro makléře.">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="canonical" href="https://www.odhad.online/vysledek.html">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5BJX68GM');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Meta Pixel Code -->
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '581364111162528');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=581364111162528&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Hotjar Tracking Code -->
+    <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:5350048,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
+    <!-- End Hotjar Tracking Code -->
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        "surface-dim": "#d9dadb",
+                        "surface-container-low": "#f3f4f5",
+                        "background": "#f8f9fa",
+                        "surface-container-lowest": "#ffffff",
+                        "inverse-primary": "#b9c3ff",
+                        "on-surface-variant": "#434657",
+                        "error-container": "#ffdad6",
+                        "inverse-on-surface": "#f0f1f2",
+                        "on-background": "#191c1d",
+                        "surface-container-highest": "#e1e3e4",
+                        "primary-container": "#0047ff",
+                        "surface-tint": "#0046fa",
+                        "surface-bright": "#f8f9fa",
+                        "inverse-surface": "#2e3132",
+                        "on-surface": "#191c1d",
+                        "surface-container": "#edeeef",
+                        "surface-variant": "#e1e3e4",
+                        "secondary-container": "#d6e3fb",
+                        "on-secondary-container": "#586579",
+                        "secondary": "#525f73",
+                        "surface": "#f8f9fa",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "primary": "#0035c5",
+                        "outline-variant": "#c4c5da",
+                        "on-primary-container": "#d4d9ff",
+                        "outline": "#747688",
+                        "on-error": "#ffffff",
+                        "quality-green": "#16a34a",
+                        "quality-orange": "#ea580c",
+                        "quality-red": "#dc2626"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope", "sans-serif"],
+                        "body": ["Inter", "sans-serif"],
+                        "label": ["Inter", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.filled {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .btn-primary-gradient {
+            background: linear-gradient(135deg, #0035c5 0%, #0047ff 100%);
+        }
+
+        /* Skeleton loading animation */
+        .skeleton {
+            background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+            background-size: 200% 100%;
+            animation: skeleton-loading 1.5s infinite;
+        }
+        @keyframes skeleton-loading {
+            0% { background-position: 200% 0; }
+            100% { background-position: -200% 0; }
+        }
+
+        /* Toast notification */
+        .toast {
+            animation: toast-in 0.3s ease-out, toast-out 0.3s ease-in 2.7s forwards;
+        }
+        @keyframes toast-in {
+            from { opacity: 0; transform: translateY(1rem); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes toast-out {
+            from { opacity: 1; transform: translateY(0); }
+            to { opacity: 0; transform: translateY(1rem); }
+        }
+
+        /* Print styles */
+        @media print {
+            nav, footer, .no-print, .cta-section { display: none !important; }
+            body { background: white !important; }
+            main { padding-top: 0 !important; }
+            .print-header { display: flex !important; }
+            * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+            .shadow-xl, .shadow-lg, .shadow-sm { box-shadow: none !important; }
+            section { break-inside: avoid; }
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body selection:bg-primary-container selection:text-white">
+
+<!-- Print-only header -->
+<div class="print-header hidden items-center justify-between px-8 py-4 border-b border-gray-200 mb-8">
+    <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Odhad.online" class="h-8">
+        <span class="text-xl font-bold font-headline text-primary">Odhad.Online</span>
+    </div>
+    <div class="text-sm text-gray-500" data-report-date></div>
+</div>
+
+<!-- Navigation -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+    <div class="flex justify-between items-center px-4 sm:px-8 h-20 w-full max-w-screen-2xl mx-auto">
+        <a href="index.html" class="flex items-center gap-3">
+            <img src="images/logo.png" alt="Odhad.online" class="h-8">
+            <span class="text-2xl font-extrabold tracking-tight text-on-surface font-headline">Odhad.Online</span>
+        </a>
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-secondary font-medium hover:text-primary transition-colors" href="index.html#jak-to-funguje">Jak to funguje</a>
+            <a class="text-secondary font-medium hover:text-primary transition-colors" href="metodika.html">Metodika</a>
+            <a class="text-secondary font-medium hover:text-primary transition-colors" href="blog.html">Blog</a>
+            <a class="text-secondary font-medium hover:text-primary transition-colors" href="index.html#kontakt">Kontakt</a>
+        </div>
+        <div class="flex items-center gap-4">
+            <a href="odhad.html" class="bg-primary text-white font-bold px-6 py-2.5 rounded-full btn-primary-gradient hover:opacity-90 transition-all active:scale-95 no-print">
+                Nový odhad
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="pt-32 pb-20 px-4 sm:px-6 max-w-7xl mx-auto space-y-16">
+
+    <!-- ============================================ -->
+    <!-- SECTION 1: Hero — Main Result Card           -->
+    <!-- ============================================ -->
+    <section class="relative" id="hero-section">
+        <!-- Decorative blurs -->
+        <div class="absolute -top-12 -left-12 w-64 h-64 bg-primary/5 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute top-1/2 -right-12 w-96 h-96 bg-secondary/5 rounded-full blur-3xl -z-10"></div>
+
+        <div class="grid lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+
+            <!-- Left: Result Card -->
+            <div class="lg:col-span-7 bg-surface-container-lowest rounded-3xl p-8 lg:p-10 shadow-[0_40px_60px_-15px_rgba(25,28,29,0.06)] border border-white/50 relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full"></div>
+
+                <header class="mb-8">
+                    <!-- Traffic Light Badge -->
+                    <span data-report-badge class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest mb-4 bg-primary/10 text-primary">
+                        <span class="material-symbols-outlined text-sm filled">verified</span>
+                        <span data-report-badge-text>Analyzujeme data...</span>
+                    </span>
+                    <h1 class="font-headline text-3xl lg:text-5xl font-extrabold text-on-surface tracking-tight mb-2">
+                        Odhadovaná tržní hodnota
+                    </h1>
+                    <p data-report-subtitle class="text-secondary text-lg">
+                        <span class="skeleton inline-block w-80 h-5 rounded">&nbsp;</span>
+                    </p>
+                </header>
+
+                <!-- Price -->
+                <div class="flex flex-col gap-2 mb-12">
+                    <div data-report-price class="font-headline text-5xl lg:text-7xl font-extrabold text-primary tracking-tighter">
+                        <span class="skeleton inline-block w-64 h-16 rounded">&nbsp;</span>
+                    </div>
+                    <div class="flex items-center gap-2 text-on-surface-variant font-medium">
+                        <span class="material-symbols-outlined text-primary">analytics</span>
+                        Spolehlivost odhadu: <span data-report-confidence class="text-primary font-bold">—</span>
+                    </div>
+                </div>
+
+                <!-- Range Slider -->
+                <div class="space-y-6">
+                    <div class="flex justify-between items-end">
+                        <div class="space-y-1">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-widest">Konzervativní</span>
+                            <div data-report-range-min class="font-headline font-bold text-lg">—</div>
+                        </div>
+                        <div class="space-y-1 text-right">
+                            <span class="text-xs font-bold text-secondary uppercase tracking-widest">Optimistický</span>
+                            <div data-report-range-max class="font-headline font-bold text-lg">—</div>
+                        </div>
+                    </div>
+                    <div class="relative h-4 bg-surface-container rounded-full overflow-hidden">
+                        <div class="absolute inset-0 bg-gradient-to-r from-slate-200 via-primary/40 to-slate-200"></div>
+                        <div data-report-range-bar class="absolute h-full bg-gradient-to-r from-primary/20 via-primary to-primary/20 rounded-full" style="left: 10%; right: 10%;"></div>
+                        <div data-report-range-marker class="absolute top-1/2 -translate-y-1/2 w-6 h-6 bg-white border-4 border-primary rounded-full shadow-lg z-10" style="left: 45%;"></div>
+                    </div>
+                    <p data-report-range-note class="text-sm text-secondary italic leading-relaxed">
+                        <span class="skeleton inline-block w-full h-4 rounded">&nbsp;</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right: Property Details -->
+            <div class="lg:col-span-5 space-y-6 lg:space-y-8">
+                <!-- Property Image -->
+                <div class="rounded-3xl overflow-hidden aspect-[4/3] shadow-xl group relative bg-surface-container-low">
+                    <div class="w-full h-full flex items-center justify-center text-secondary">
+                        <span class="material-symbols-outlined text-6xl opacity-30">home</span>
+                    </div>
+                    <div class="absolute bottom-6 left-6 bg-white/90 backdrop-blur px-4 py-2 rounded-xl text-sm font-bold shadow-lg">
+                        <span data-report-address>Načítání adresy...</span>
+                    </div>
+                </div>
+
+                <!-- Property Info Grid -->
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-surface-container-low p-5 lg:p-6 rounded-2xl flex flex-col gap-3">
+                        <span class="material-symbols-outlined text-primary text-3xl">straighten</span>
+                        <div>
+                            <div class="text-xs text-secondary font-bold uppercase tracking-wider">Plocha</div>
+                            <div data-report-area class="font-headline text-xl font-bold">— m²</div>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-low p-5 lg:p-6 rounded-2xl flex flex-col gap-3">
+                        <span class="material-symbols-outlined text-primary text-3xl">home_work</span>
+                        <div>
+                            <div class="text-xs text-secondary font-bold uppercase tracking-wider">Typ nemovitosti</div>
+                            <div data-report-type class="font-headline text-xl font-bold">—</div>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-low p-5 lg:p-6 rounded-2xl flex flex-col gap-3">
+                        <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+                        <div>
+                            <div class="text-xs text-secondary font-bold uppercase tracking-wider">Lokalita</div>
+                            <div data-report-location class="font-headline text-xl font-bold">—</div>
+                        </div>
+                    </div>
+                    <div class="bg-surface-container-low p-5 lg:p-6 rounded-2xl flex flex-col gap-3">
+                        <span class="material-symbols-outlined text-primary text-3xl">payments</span>
+                        <div>
+                            <div class="text-xs text-secondary font-bold uppercase tracking-wider">Cena za m²</div>
+                            <div data-report-price-sqm class="font-headline text-xl font-bold">—</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 2: AI Analysis + Data Quality        -->
+    <!-- ============================================ -->
+    <section class="space-y-8" id="analysis-section">
+        <div class="space-y-2">
+            <h2 class="font-headline text-3xl font-extrabold tracking-tight">AI Analýza</h2>
+            <p class="text-secondary">Kontextový rozbor odhadu s využitím umělé inteligence.</p>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- AI Commentary Card (2/3) -->
+            <div class="md:col-span-2 bg-surface-container-low rounded-3xl p-8 relative overflow-hidden">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
+                    <h3 class="font-headline text-xl font-bold">Analýza odhadu</h3>
+                </div>
+                <div data-report-analysis class="text-on-surface leading-relaxed space-y-4">
+                    <div class="skeleton w-full h-4 rounded"></div>
+                    <div class="skeleton w-full h-4 rounded"></div>
+                    <div class="skeleton w-5/6 h-4 rounded"></div>
+                    <div class="skeleton w-full h-4 rounded"></div>
+                    <div class="skeleton w-3/4 h-4 rounded"></div>
+                </div>
+            </div>
+
+            <!-- Data Quality Card (1/3) -->
+            <div class="bg-surface-container-low rounded-3xl p-8 flex flex-col items-center text-center relative overflow-hidden">
+                <!-- Traffic Light Circle -->
+                <div data-report-traffic-light class="w-24 h-24 rounded-full flex items-center justify-center mb-6 bg-surface-container">
+                    <span class="material-symbols-outlined text-4xl text-on-surface-variant">hourglass_top</span>
+                </div>
+                <h3 data-report-quality-label class="font-headline text-lg font-bold mb-2">Vyhodnocujeme...</h3>
+                <p data-report-quality-text class="text-secondary text-sm mb-6">
+                    <span class="skeleton inline-block w-full h-3 rounded">&nbsp;</span>
+                </p>
+
+                <!-- Mini metrics -->
+                <div class="w-full space-y-3 text-left text-sm">
+                    <div class="flex justify-between items-center">
+                        <span class="text-secondary">Podobnost</span>
+                        <span data-report-metric-similarity class="font-bold">—</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-secondary">Vzdálenost</span>
+                        <span data-report-metric-distance class="font-bold">—</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-secondary">Stáří dat</span>
+                        <span data-report-metric-age class="font-bold">—</span>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-secondary">Srovnávací</span>
+                        <span data-report-metric-comparables class="font-bold">—</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 3: Warnings (conditional)            -->
+    <!-- ============================================ -->
+    <section data-report-warnings-section class="space-y-6 hidden" id="warnings-section">
+        <div class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-quality-orange text-2xl">warning</span>
+            <h2 class="font-headline text-2xl font-extrabold tracking-tight">Upozornění</h2>
+        </div>
+        <div data-report-warnings class="space-y-4">
+            <!-- Warnings inserted by JS -->
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 4: Market Intelligence               -->
+    <!-- ============================================ -->
+    <section class="space-y-8" id="market-section">
+        <div class="space-y-2">
+            <h2 class="font-headline text-3xl font-extrabold tracking-tight">Tržní kontext</h2>
+            <p class="text-secondary">Data o lokalitě a srovnávacích nemovitostech.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+            <!-- Stats Card -->
+            <div class="md:col-span-2 bg-surface-container-low rounded-3xl p-8">
+                <div class="flex justify-between items-start mb-8">
+                    <div>
+                        <div class="text-xs font-bold text-secondary uppercase tracking-widest mb-1">Průměrná doba inzerce</div>
+                        <div class="flex items-center gap-2">
+                            <span data-report-avg-listing class="text-3xl font-headline font-extrabold text-on-surface">—</span>
+                            <span class="text-lg text-secondary">dní</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Comparables mini table -->
+                <div class="border-t border-surface-container pt-6">
+                    <div class="text-xs font-bold text-secondary uppercase tracking-widest mb-4">Srovnávací nemovitosti</div>
+                    <div class="grid grid-cols-3 gap-4 text-sm">
+                        <div>
+                            <div class="text-secondary">Použito</div>
+                            <div data-report-comp-count class="font-bold text-lg">—</div>
+                        </div>
+                        <div>
+                            <div class="text-secondary">Prům. vzdálenost</div>
+                            <div data-report-comp-distance class="font-bold text-lg">—</div>
+                        </div>
+                        <div>
+                            <div class="text-secondary">Prům. stáří</div>
+                            <div data-report-comp-age class="font-bold text-lg">—</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Locality Card -->
+            <div class="bg-surface-container-low rounded-3xl p-8 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-2 mb-4">
+                        <span class="material-symbols-outlined text-primary">location_on</span>
+                        <div class="text-xs font-bold text-secondary uppercase tracking-widest">Lokalita</div>
+                    </div>
+                    <div data-report-locality-name class="text-xl font-headline font-bold mb-2">—</div>
+                    <p data-report-locality-note class="text-sm text-secondary leading-relaxed">
+                        <span class="skeleton inline-block w-full h-3 rounded">&nbsp;</span>
+                    </p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-surface-container">
+                    <div class="text-xs text-secondary">Radius hledání</div>
+                    <div data-report-search-radius class="font-bold">—</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 5: Agent Recommendations + Client Text -->
+    <!-- ============================================ -->
+    <section class="space-y-8" id="agent-section">
+        <div class="space-y-2">
+            <h2 class="font-headline text-3xl font-extrabold tracking-tight">Pro makléře</h2>
+            <p class="text-secondary">AI doporučení a připravený text pro klienta.</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-6">
+            <!-- Agent Advice Card -->
+            <div class="bg-primary/5 rounded-3xl p-8">
+                <div class="flex items-center gap-3 mb-6">
+                    <span class="material-symbols-outlined text-primary text-2xl">assignment</span>
+                    <h3 class="font-headline text-xl font-bold">Doporučení</h3>
+                </div>
+                <div data-report-agent-advice class="text-on-surface leading-relaxed space-y-3">
+                    <div class="skeleton w-full h-4 rounded"></div>
+                    <div class="skeleton w-5/6 h-4 rounded"></div>
+                    <div class="skeleton w-full h-4 rounded"></div>
+                </div>
+            </div>
+
+            <!-- Client Text Card -->
+            <div class="bg-surface-container-lowest rounded-3xl p-8 border border-surface-container relative">
+                <div class="flex items-center justify-between mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="material-symbols-outlined text-primary text-2xl">mail</span>
+                        <h3 class="font-headline text-xl font-bold">Text pro klienta</h3>
+                    </div>
+                    <button onclick="copyClientText()" class="no-print flex items-center gap-2 px-4 py-2 bg-surface-container-low hover:bg-surface-container rounded-full text-sm font-bold transition-all active:scale-95">
+                        <span class="material-symbols-outlined text-base">content_copy</span>
+                        Zkopírovat
+                    </button>
+                </div>
+                <div data-report-client-text class="text-on-surface leading-relaxed italic border-l-4 border-primary/20 pl-4">
+                    <div class="skeleton w-full h-4 rounded mb-2"></div>
+                    <div class="skeleton w-full h-4 rounded mb-2"></div>
+                    <div class="skeleton w-5/6 h-4 rounded mb-2"></div>
+                    <div class="skeleton w-full h-4 rounded"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 6: CTA                               -->
+    <!-- ============================================ -->
+    <section class="cta-section no-print flex flex-col md:flex-row items-center justify-between p-8 lg:p-12 bg-surface-container-lowest rounded-[2.5rem] shadow-xl border border-white gap-8">
+        <div class="max-w-xl text-center md:text-left">
+            <h3 class="font-headline text-2xl lg:text-3xl font-extrabold mb-4">Potřebujete další kroky?</h3>
+            <p class="text-secondary text-lg">Stáhněte si kompletní report nebo nás kontaktujte pro konzultaci s odborníkem.</p>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
+            <button onclick="window.print()" class="flex items-center justify-center gap-2 px-8 py-4 bg-surface-container-high text-on-surface font-bold rounded-full hover:bg-surface-container-highest transition-all active:scale-95">
+                <span class="material-symbols-outlined">picture_as_pdf</span>
+                Stáhnout PDF
+            </button>
+            <a href="mailto:info@odhad.online" class="flex items-center justify-center gap-2 px-10 py-4 bg-primary text-white font-bold rounded-full btn-primary-gradient shadow-lg shadow-primary/20 hover:opacity-90 transition-all active:scale-95">
+                Kontaktovat odborníka
+                <span class="material-symbols-outlined">arrow_forward</span>
+            </a>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-slate-50 w-full py-12 px-4 sm:px-8 border-t border-slate-200">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-6 max-w-7xl mx-auto">
+        <div class="flex flex-col items-center md:items-start gap-2">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/logo.png" alt="Odhad.online" class="h-6">
+                <span class="text-xl font-bold text-on-surface font-headline">Odhad.Online</span>
+            </a>
+            <p class="text-slate-500 text-sm text-center md:text-left max-w-sm">
+                Poskytované ocenění má pouze informativní charakter a neslouží jako oficiální znalecký posudek.
+            </p>
+            <p class="text-slate-400 text-xs">&copy; 2021–2026 Odhad.Online. Všechna práva vyhrazena.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-8">
+            <a class="text-xs font-label uppercase tracking-wider text-slate-500 hover:text-primary underline transition-all" href="oou.html">Ochrana údajů</a>
+            <a class="text-xs font-label uppercase tracking-wider text-slate-500 hover:text-primary underline transition-all" href="OP.html">Obchodní podmínky</a>
+            <a class="text-xs font-label uppercase tracking-wider text-slate-500 hover:text-primary underline transition-all" href="cookies.html">Cookies</a>
+            <a class="text-xs font-label uppercase tracking-wider text-slate-500 hover:text-primary underline transition-all" href="metodika.html">Metodika</a>
+        </div>
+    </div>
+</footer>
+
+<!-- Toast container -->
+<div id="toast-container" class="fixed bottom-8 right-8 z-50"></div>
+
+<!-- Report JavaScript -->
+<script src="js/report.js"></script>
+</body>
+</html>
