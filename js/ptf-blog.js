@@ -62,6 +62,20 @@ window.PTF_BLOG = (function () {
     });
   }
 
+  /**
+   * Záloha pro výpis: poslední známý blog/posts.json z repa.
+   *
+   * Výpis nemá jinou statickou verzi (karty se vykreslují až z dat), a
+   * prázdný blog při výpadku API je horší než chvilku stará nabídka
+   * článků. Detail zálohu nemá — tam je poctivější chybová hláška než
+   * text, který už neplatí.
+   */
+  function zalohaSeznamu() {
+    return fetch('/blog/posts.json')
+      .then(function (r) { if (!r.ok) throw new Error('záloha ' + r.status); return r.json(); })
+      .then(function (d) { return d.posts || []; });
+  }
+
   function naStary(p) {
     var datum = (p.publishedAt || p.createdAt || '').slice(0, 10);
     var nazev = (p.category && p.category.name) || '';
@@ -85,7 +99,11 @@ window.PTF_BLOG = (function () {
     /** Výpis — pole ve tvaru původního posts.json. */
     seznam: function () {
       return nacti('/api/blog', '/api/blog?web=' + WEB + '&limit=50')
-        .then(function (d) { return (d.data || []).map(naStary); });
+        .then(function (d) { return (d.data || []).map(naStary); })
+        .catch(function (e) {
+          console.warn('Články z PTF se nenačetly, beru zálohu:', e);
+          return zalohaSeznamu();
+        });
     },
     /** Detail — metadata ve starém tvaru + hotové HTML obsahu. */
     detail: function (slug) {
