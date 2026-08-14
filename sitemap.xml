@@ -20,6 +20,60 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=nez-zacnete-rekonstruovat-proc-nikdy-nedelat-upravy-pred-prodejem-bez-konzultace</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=proc-stav-nemovitosti-hraje-klicovou-roli-v-jeji-cene</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=klic-k-uspechu-prodeje-presny-odhad-trzni-ceny-nemovitosti</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=nejlepsi-pomer-cena-vykon-jak-drobne-upravy-zvysuji-hodnotu-nemovitosti</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=proc-je-premrstena-cena-vasi-nemovitosti-cesta-do-pekel</loc>
+    <lastmod>2026-07-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=proc-znat-realnou-trzni-cenu-nemovitosti</loc>
+    <lastmod>2026-03-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=fotografie-a-jejich-vliv-na-cenu-proc-se-kupujici-rozhoduje-jeste-pred-prohlidkou</loc>
+    <lastmod>2025-08-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=tichy-zabijak-vaseho-prodeje-spatne-nastavena-cena</loc>
+    <lastmod>2025-08-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.odhad.online/blog/detail.html?post=spravne-oceneni-nemovitosti</loc>
+    <lastmod>2024-12-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.odhad.online/metodika.html</loc>
     <lastmod>2026-02-09</lastmod>
     <changefreq>monthly</changefreq>
@@ -51,52 +105,4 @@
   </url>
 
   <!-- Blog posts -->
-  <url>
-    <loc>https://www.odhad.online/blog/posts/tichy-zabijak-vaseho-prodeje-spatne-nastavena-cena.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.odhad.online/blog/posts/nez-zacnete-rekonstruovat-proc-nikdy-nedelat-upravy-pred-prodejem-bez-konzultace.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.odhad.online/blog/posts/nejlepsi-pomer-cena-vykon-jak-drobne-upravy-zvysuji-hodnotu-nemovitosti.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.odhad.online/blog/posts/proc-stav-nemovitosti-hraje-klicovou-roli-v-jeji-cene.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.odhad.online/blog/posts/proc-je-premrstena-cena-vasi-nemovitosti-cesta-do-pekel.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.odhad.online/blog/posts/klic-k-uspechu-prodeje-presny-odhad-trzni-ceny-nemovitosti.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.odhad.online/blog/posts/spravne-oceneni-nemovitosti.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-<url>
-    <loc>https://www.odhad.online/blog/posts/fotografie-a-jejich-vliv-na-cenu-proc-se-kupujici-rozhoduje-jeste-pred-prohlidkou.html</loc>
-    <lastmod>2026-02-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>

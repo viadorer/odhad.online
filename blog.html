@@ -145,6 +145,7 @@
     <script src="js/components.js"></script>
     <script src="js/blog.js"></script>
 
+    <script src="/js/ptf-blog.js"></script>
     <script>
         function blogIndex() {
             return {
@@ -171,9 +172,9 @@
                 
                 async init() {
                     try {
-                        const response = await fetch('/blog/posts.json');
-                        const data = await response.json();
-                        this.posts = data.posts || [];
+                        // Články z PTF (viz js/ptf-blog.js) — stejný tvar
+                        // jako dřívější posts.json, vykreslení beze změny.
+                        this.posts = await window.PTF_BLOG.seznam();
                         this.loading = false;
                     } catch (error) {
                         console.error('Chyba při načítání článků:', error);

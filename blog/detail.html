@@ -201,6 +201,7 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="../js/components.js"></script>
     
+    <script src="/js/ptf-blog.js"></script>
     <script>
         function blogDetail() {
             return {
@@ -231,57 +232,31 @@
                     }
                     
                     try {
-                        // Load posts data
-                        const response = await fetch('/blog/posts.json');
-                        const data = await response.json();
-                        const posts = data.posts || [];
-                        
-                        // Find the specific post
-                        this.post = posts.find(p => p.id === postId);
-                        
-                        if (!this.post) {
-                            this.error = 'Článek s tímto identifikátorem nebyl nalezen.';
-                            this.loading = false;
-                            return;
-                        }
-                        
-                        // Load post content
-                        try {
-                            const contentResponse = await fetch(`/blog/posts/${postId}.html`);
-                            if (contentResponse.ok) {
-                                const raw = await contentResponse.text();
-                                // Try to parse and extract only the main article content when a full HTML document is provided
-                                try {
-                                    const parser = new DOMParser();
-                                    const doc = parser.parseFromString(raw, 'text/html');
+                        // Článek z PTF (viz js/ptf-blog.js): metadata ve
+                        // starém tvaru + obsah jako hotové HTML, takže
+                        // fragmenty v /blog/posts/ už nejsou potřeba.
+                        this.post = await window.PTF_BLOG.detail(postId);
+                        this.postContent = this.post.content;
 
-                                    // Prefer explicit article container
-                                    const prose = doc.querySelector('.prose.prose-lg.max-w-none') || doc.querySelector('.prose');
-                                    if (prose) {
-                                        this.postContent = prose.outerHTML;
-                                    } else if (doc.body && doc.body.innerHTML.trim()) {
-                                        // Fallback to body content if present
-                                        this.postContent = doc.body.innerHTML;
-                                    } else {
-                                        // As-is fallback
-                                        this.postContent = raw;
-                                    }
-                                } catch (parseErr) {
-                                    // If parsing fails, render as-is
-                                    this.postContent = raw;
-                                }
-                            } else {
-                                this.postContent = '<p>Obsah článku se nepodařilo načíst.</p>';
-                            }
-                        } catch (contentError) {
-                            console.error('Chyba při načítání obsahu:', contentError);
-                            this.postContent = '<p>Obsah článku se nepodařilo načíst.</p>';
+                        // Canonical z PTF — sdílené články odkazují na originál.
+                        if (this.post.canonicalUrl) {
+                            let canon = document.querySelector('link[rel="canonical"]');
+                            if (!canon) { canon = document.createElement('link'); canon.setAttribute('rel','canonical'); document.head.appendChild(canon); }
+                            canon.setAttribute('href', this.post.canonicalUrl);
                         }
                         
-                        // Find related posts (same category, exclude current)
-                        this.relatedPosts = posts
-                            .filter(p => p.id !== postId && p.category === this.post.category)
-                            .slice(0, 3);
+                        // Související články — seznam se dotáhne zvlášť
+                        // (dřív se bral z posts.json načteného výš).
+                        // Selhání tady nesmí shodit celý článek.
+                        try {
+                            const vsechny = await window.PTF_BLOG.seznam();
+                            this.relatedPosts = vsechny
+                                .filter(p => p.id !== postId && p.category === this.post.category)
+                                .slice(0, 3);
+                        } catch (e) {
+                            console.warn('Související články se nenačetly:', e);
+                            this.relatedPosts = [];
+                        }
                         
                         // Update page meta tags
                         this.updateMetaTags();
