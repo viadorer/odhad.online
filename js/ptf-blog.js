@@ -30,6 +30,38 @@ window.PTF_BLOG = (function () {
     return { 'X-Tenant-Slug': TENANT, 'Accept': 'application/json' };
   }
 
+  /**
+   * Kudy se ptát.
+   *
+   * Na Vercelu existuje /api/blog — dotaz jde přes server, nezávisle na
+   * tom, jestli veřejné API pouští cizí původ, a odpověď se cachuje na
+   * hraně. Na GitHub Pages, kde žádný server není, se volá PTF napřímo.
+   * Zjistí se to jedním dotazem při prvním použití, takže přesun webu
+   * mezi hostiteli nevyžaduje zásah do kódu.
+   */
+  var _proxy = null;
+  function maProxy() {
+    if (_proxy !== null) return Promise.resolve(_proxy);
+    return fetch('/api/blog', { method: 'HEAD' })
+      .then(function (r) {
+        // GitHub Pages na neznámou cestu vrátí 404 (nebo HTML stránku).
+        _proxy = r.ok;
+        return _proxy;
+      })
+      .catch(function () { _proxy = false; return false; });
+  }
+
+  function nacti(cesta, primo) {
+    return maProxy().then(function (jePorxy) {
+      return jePorxy
+        ? fetch(cesta)
+        : fetch(API + primo, { headers: hlavicky() });
+    }).then(function (r) {
+      if (!r.ok) throw new Error('API ' + r.status);
+      return r.json();
+    });
+  }
+
   function naStary(p) {
     var datum = (p.publishedAt || p.createdAt || '').slice(0, 10);
     var nazev = (p.category && p.category.name) || '';
@@ -52,14 +84,14 @@ window.PTF_BLOG = (function () {
   return {
     /** Výpis — pole ve tvaru původního posts.json. */
     seznam: function () {
-      return fetch(API + '/api/blog?web=' + WEB + '&limit=50', { headers: hlavicky() })
-        .then(function (r) { if (!r.ok) throw new Error('API ' + r.status); return r.json(); })
+      return nacti('/api/blog', '/api/blog?web=' + WEB + '&limit=50')
         .then(function (d) { return (d.data || []).map(naStary); });
     },
     /** Detail — metadata ve starém tvaru + hotové HTML obsahu. */
     detail: function (slug) {
-      return fetch(API + '/api/blog/' + encodeURIComponent(slug) + '?web=' + WEB, { headers: hlavicky() })
-        .then(function (r) { if (!r.ok) throw new Error('API ' + r.status); return r.json(); })
+      return nacti(
+        '/api/blog-post?slug=' + encodeURIComponent(slug),
+        '/api/blog/' + encodeURIComponent(slug) + '?web=' + WEB)
         .then(function (d) {
           var m = naStary(d);
           m.content = d.content || '';
