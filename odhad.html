@@ -43,8 +43,8 @@
     </script>
     <!-- End Hotjar Tracking Code -->
     <link rel="icon" type="image/png" href="images/favicon.png">
-    <title>Odhad nemovitosti | Odhad.Online</title>
-    <meta name="description" content="Vyplňte formulář a získejte okamžitý odhad ceny vaší nemovitosti zdarma. Profesionální ocenění bytů, domů a pozemků online během 2 minut.">
+    <title>Mapa a odhad nemovitosti zdarma | Odhad.Online</title>
+    <meta name="description" content="Najděte svou nemovitost na mapě, podívejte se na katastr, územní plán, sítě a rizika a nechte si ji zdarma ocenit. Odhad ceny bytu, domu i pozemku přijde e-mailem.">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.odhad.online/odhad.html">
     <script src="https://cdn.tailwindcss.com"></script>
@@ -60,64 +60,35 @@
             }
         }
     </script>
-    <script>var cemap_id = '22642/235f94312cb0beea2fe91791583a1aa735ee02fc';</script>
-    <script src="https://cemap.cz/beta2/inc/js/widget.js" async></script>
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
     </style>
 </head>
-<body class="bg-gray-50 font-[Inter]">
+<body class="bg-gray-50 font-[Inter] overflow-hidden">
     <!-- Header placeholder -->
     <div id="header-placeholder"></div>
 
     <main id="main-content">
-    <!-- Hero sekce -->
-    <section class="pt-32 pb-48 relative overflow-hidden">
-        <div class="absolute inset-0 z-0">
-            <img src="images/odhad.png" alt="Background" class="w-full h-full object-cover">
-        </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
-            <div class="bg-black/40 backdrop-blur-sm rounded-3xl py-12 px-6 sm:px-12 max-w-4xl mx-auto">
-                <h1 class="text-4xl sm:text-5xl font-bold text-white mb-6">
-                    Zjistěte hodnotu vaší nemovitosti během dvou minut
-                </h1>
-                <p class="text-xl sm:text-2xl text-white/90 mb-8 max-w-2xl mx-auto font-medium">
-                    Stačí vyplnit jednoduchý formulář a získáte okamžitý odhad ceny vaší nemovitosti.
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Formulář sekce -->
-    <section class="relative -mt-40 pb-20 bg-gray-50">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="bg-white rounded-3xl shadow-xl p-8 relative z-20">
-                <div class="cemap-widget" data-options="id=101"></div>
-            </div>
-            <!-- Trust badges -->
-            <div class="flex flex-wrap items-center justify-center gap-6 mt-6 text-sm text-gray-500">
-                <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-                    <span>Data v souladu s GDPR</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
-                    <span>Bezpečné SSL připojení</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
-                    <span>100% zdarma, bez skrytých poplatků</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        <h1 class="sr-only">Mapa nemovitostí a odhad ceny zdarma</h1>
+        <p class="sr-only">Klikněte na pozemek nebo dům a uvidíte výměru, územní plán, sítě, rizika a prodeje v okolí. Tlačítkem Ocenit si nemovitost zdarma oceníte, odhad vám přijde e-mailem.</p>
+        <!--
+          Mapa a ocenění běží v systému PTF reality (ptf.cz/mapa) — stejná data
+          a stejné ocenění jako v CRM; leady jdou rovnou k makléři.
+          Hlavička s logem Odhad.Online zůstává nahoře (výška 80 px).
+        -->
+        <iframe
+            src="https://www.ptf.cz/mapa?zdroj=odhad"
+            title="Mapa nemovitostí a odhad ceny"
+            allow="geolocation; clipboard-write"
+            loading="eager"
+            style="position: fixed; top: 80px; left: 0; width: 100%; height: calc(100dvh - 80px); border: 0; background: #f3f4f6;"
+        ></iframe>
+        <noscript>
+            <p style="padding: 120px 16px; text-align: center;">Mapa potřebuje JavaScript. <a href="https://www.ptf.cz/mapa?zdroj=odhad">Otevřít mapu</a></p>
+        </noscript>
     </main>
-
-<!-- Footer placeholder -->
-    <div id="footer-placeholder"></div>
 
     <!-- Component loader script -->
     <script src="js/components.js"></script>
